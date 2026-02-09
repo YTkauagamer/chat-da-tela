@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Overlay youtubekaua</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0); /* Fundo transparente */
+        }
+        #container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #gif-display {
+            max-width: 80%;  /* Ajuste o tamanho conforme preferir */
+            max-height: 80%;
+            display: none;   /* Começa escondido */
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <img id="gif-display" src="" alt="Twitch Overlay">
+    </div>
+
+    <script src="https://unpkg.com/tmi.js@1.8.5/twitch-messaging-interface.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
